@@ -12,12 +12,18 @@ gem "twitter-bootstrap-rails"
 gem "therubyracer"
 gem "less-rails"
 gem "figaro"
+gem "faraday"
 
 
 group :development, :test do
-  gem 'pry'
-  gem "rspec-rails", "~> 3.0"
-end
+  gem 'pry-rails'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
+  gem 'capybara'
+  gem 'vcr'
+  gem 'launchy'
+  gem 'shoulda-matchers', require: falseend
 
 group :development do
   gem 'web-console', '~> 2.0'
