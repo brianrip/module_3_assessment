@@ -23,7 +23,8 @@ group :development, :test do
   gem 'capybara'
   gem 'vcr'
   gem 'launchy'
-  gem 'shoulda-matchers', require: falseend
+  gem 'shoulda-matchers'
+end
 
 group :development do
   gem 'web-console', '~> 2.0'

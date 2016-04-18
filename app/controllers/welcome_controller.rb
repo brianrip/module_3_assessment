@@ -6,7 +6,7 @@ class WelcomeController < ApplicationController
 private
 
   def location
-    @location ||= LocationService.new
+    @location ||= LocationService.new(token)
   end
 
 end
