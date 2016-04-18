@@ -7,12 +7,10 @@ class LocationServices
   end
 
   def by_zipcode(zip)
-    connection.get(zip)
+    JSON.parse(connection.get("?=#{zip}")).body
   end
 
 end
-# @connection = Faraday.new(url: "https://www.strava.com/api/v3")
-# @connection.headers = { "Authorization" => "Bearer #{token}" }
 # As a user
 # When I visit "/"
 # And I fill in the search form with 80203
