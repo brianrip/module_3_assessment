@@ -1,0 +1,5 @@
+<%= form_tag search_path, method: :post do %>
+  <%= label_tag "zipcode" %>
+  <%= text_field_tag "location[zip]" %>
+  <%= submit_tag "Locate" %>
+<% end %>
