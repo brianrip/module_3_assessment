@@ -1,4 +1,4 @@
-class LocationServices
+class StationServices
   attr_reader :connection
 
   def initialize(api_key)

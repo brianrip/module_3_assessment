@@ -1,12 +1,12 @@
 class WelcomeController < ApplicationController
   def index
-    @stations = location.all
+    @stations = station.all
   end
 
 private
 
-  def location
-    @location ||= LocationService.new(token)
+  def station
+    @station ||= StationService.new(token)
   end
 
 end
